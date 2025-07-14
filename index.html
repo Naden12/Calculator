@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="w-[30%] mx-auto  mt-10 h-[30%] bg-gray-100 p-5 rounded-lg shadow-lg">
+        <form action="">
+            <h1 class="text-3xl ml-[17%] font-extrabold p-5">Simple Calculator</h1>
+            <div>
+                <label for="sum1" class="block mb-2 text-[20px] font-medium text-gray-70">value1</label>
+                <input type="number" id="num1" class="rounded-xl w-full p-2 border-1">
+            </div>
+            <div>
+                <label for="sum2" class="block mb-2  text-[20px] font-medium text-gray-70">value2</label>
+                <input type="number" id="num2" class="rounded-xl w-full p-2 border-1">
+            </div>
+            <button type="button" onclick="sum()" class="w-2xs  text-[20px] ml-[16%] mt-6 font-medium rounded-2xl bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 cursor-pointer">
+                Add Numders
+            </button>
+        </form>
+        <p id="result" class="w-3xs block mb-2 text-[20px] font-medium text-gray-70 ml-[40%] mt-6 ">result : </p>
+    </main>
+    <script src="./Sum.js"></script>
+</body>
+</html>
